@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>שף אופק חוזה | סדנאות בישול ואירועי שף פרטיים</title>
+    <meta name="description" content="סדנאות בישול ואירועי שף חווייתיים עם השף אופק חוזה והשף אסף — אירועי חברה, ימי הולדת, אירועים רומנטיים וארוחות שף פרטיות. חומרי גלם מובחרים ושירות מקצועי.">
+    <meta name="theme-color" content="#0a0b10">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="he_IL">
+    <meta property="og:title" content="שף אופק חוזה | סדנאות בישול ואירועי שף">
+    <meta property="og:description" content="חוויה קולינרית ייחודית: סדנאות בישול, אירועים פרטיים וארוחות שף עם השף אופק חוזה והשף אסף.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="שף אופק חוזה | סדנאות בישול ואירועי שף">
+    <meta name="twitter:description" content="חוויה קולינרית ייחודית: סדנאות בישול, אירועים פרטיים וארוחות שף.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg">
+    <link rel="apple-touch-icon" href="logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured data: local business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "אופק של טעמים",
+      "description": "סדנאות בישול ואירועי שף פרטיים בהובלת השף אופק חוזה.",
+      "image": "logo.jpg",
+      "founder": "אופק חוזה",
+      "telephone": "+972546198005",
+      "email": "ofekoftaste@gmail.com",
+      "servesCuisine": ["Italian", "Argentinian", "Japanese"],
+      "areaServed": "IL",
+      "sameAs": ["https://www.instagram.com/ofekoftaste"]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">דלג לתוכן</a>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="main-nav" id="mainNav" aria-label="ניווט ראשי">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <span class="logo-img">
+                        <img src="logo.jpg" alt="אופק של טעמים – לוגו">
+                    </span>
+                    <span class="logo-texts">
+                        <span class="logo-title">אופק של טעמים</span>
+                        <span class="logo-subtitle">בהובלת השף אופק</span>
+                    </span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#about">אודות</a></li>
+                    <li><a href="#private-chef">שף פרטי</a></li>
+                    <li><a href="#workshops">סדנאות</a></li>
+                    <li><a href="#events">אירועים</a></li>
+                    <li><a href="#contact">צור קשר</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#contact" class="cta-button nav-desktop">הזמן אירוע / סדנה</a>
+                    <div class="social-links nav-desktop">
+                        <a href="https://wa.me/972546198005" target="_blank" rel="noopener noreferrer"
+                           class="social-whatsapp" aria-label="שלחו הודעת WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ofekoftaste" target="_blank" rel="noopener noreferrer"
+                           class="social-instagram" aria-label="עקבו אחרינו באינסטגרם">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <button class="mobile-menu-btn" id="menuBtn" aria-label="פתח תפריט"
+                            aria-expanded="false" aria-controls="mobileMenu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu-overlay" id="menuOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="ניווט במובייל" aria-hidden="true" inert>
+        <ul class="mobile-menu-links">
+            <li><a href="#about">אודות</a></li>
+            <li><a href="#private-chef">שף פרטי</a></li>
+            <li><a href="#workshops">סדנאות</a></li>
+            <li><a href="#events">אירועים</a></li>
+            <li><a href="#contact">צור קשר</a></li>
+        </ul>
+        <div class="mobile-menu-social">
+            <a href="https://wa.me/972546198005" target="_blank" rel="noopener noreferrer"
+               class="social-whatsapp" aria-label="שלחו הודעת WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/ofekoftaste" target="_blank" rel="noopener noreferrer"
+               class="social-instagram" aria-label="עקבו אחרינו באינסטגרם">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>אירועים קולינרים <span class="gradient-text">בלתי נשכחים</span></h1>
+                    <p>הצטרפו לחוויה קולינרית ייחודית עם השף אופק חוזה.</p>
+                    <div class="hero-tags">
+                        <span class="tag">חלבי</span>
+                        <span class="tag">בשרי</span>
+                        <span class="tag">דגים</span>
+                        <span class="tag">אירועי חברה</span>
+                        <span class="tag">ועוד..</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#events" class="cta-button">גלו את האירועים והסדנאות</a>
+                        <a href="#contact" class="btn-ghost">צרו קשר</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="glass">
+                        <img class="hero-photo" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1600&auto=format&fit=crop" alt="פיצה איטלקית טרייה מהתנור">
+                        <!-- Israel flag badge -->
+                        <img class="hero-flag" src="https://flagcdn.com/w80/il.png" alt="דגל ישראל">
+                    </div>
+                    <div class="floating-card top">
+                        <span>👨‍🍳</span> <bdi>25+</bdi> שנות ניסיון
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-divider">
+            <div class="about-container">
+                <div class="about-text glass">
+                    <h2>על השף אופק חוזה</h2>
+                    <p class="lead">
+                        <strong>שף מקצועי עם למעלה מ-25 שנות ניסיון</strong> בעולם הקולינריה.
+                    </p>
+                    <p>
+                        המסע שלי החל במטבחים מסגנונות שונים תוך לימודי קולינריה בהם סיימתי כמצטיין. בשנותי כטבח ותלמיד לאומנות הבישול התמחיתי במטבחים שונים, במטבח האיטלקי בדגש על פיצות נאפוליטניות ופסטות טריות תוך שילוב טכניקות מסורתיות עם נגיעות מודרניות, המטבח הארגנטינאי בפוקוס על בשרים ורטבים ומטבחים ועולמות נוספים.
+                    </p>
+                    <p>
+                        היום, אני מעביר את הידע והתשוקה שלי דרך סדנאות בישול חווייתיות, שבהן כל משתתף לומד להכין מנות ברמת מסעדה בביתו. הפילוסופיה שלי פשוטה: בישול טוב מתחיל בחומרי גלם איכותיים, טכניקה נכונה והרבה אהבה.
+                    </p>
+                    <div class="about-stats">
+                        <div>
+                            <div class="stat-num"><bdi>25+</bdi></div>
+                            <div class="stat-label">שנות ניסיון</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-grid">
+                    <img src="Ofek.jpg" alt="השף אופק חוזה מבשל במטבח" class="reveal about-feature">
+
+                    <img src="sushi.jpg" alt="מגש סושי מוקפד" class="reveal">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=800&auto=format&fit=crop" alt="פיצה נאפוליטנית בתנור" class="reveal">
+                </div>
+            </div>
+        </section>
+
+        <!-- Private Chef (Assaf) Section -->
+        <section id="private-chef" class="private-chef section-divider reveal">
+            <div class="private-chef-container">
+                <div class="chef-media glass">
+                    <img src="אסף.jpeg" alt="השף אסף מכין מגש סושי באירוע פרטי" class="chef-photo">
+                    <div class="floating-card chef-badge">
+                        <span>👨‍🍳</span> <bdi>25+</bdi> שנות ניסיון
+                    </div>
+                </div>
+                <div class="chef-text glass">
+                    <h2>הכירו את השף אסף</h2>
+                    <p class="chef-body">
+                        שף פרטי עם ניסיון של מעל 25 שנה, המתמחה בארוחות שף ואירועים פרטיים. ניסיון במלונות יוקרה, מסעדות מובילות וניהול מטבחים, לצד תשוקה אמיתית לאירוח וליצירת חוויות קולינריות ייחודיות. כל אירוע מותאם אישית, עם חומרי גלם מובחרים, מנות מוקפדות ושירות מקצועי, כדי להפוך כל ארוחה לחוויה בלתי נשכחת.
+                    </p>
+                    <div class="chef-cta">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshops Section -->
+        <section id="workshops" class="workshops section-divider">
+            <div class="section-head">
+                <h2>הסדנאות שלנו</h2>
+                <p class="section-sub">מסע קולינרי בין מטבחי העולם — לומדים, מבשלים ונהנים.</p>
+            </div>
+            <div class="workshop-grid">
+                <div class="workshop-card card reveal">
+                    <h3>
+                        🍕 איטליה
+                        <img src="https://flagcdn.com/w40/it.png" alt="" aria-hidden="true" class="flag-circle">
+                    </h3>
+                    <p>
+                        למדו להכין פיצה נאפוליטנית אותנטית מהבצק ועד האפייה. טכניקות מתקדמות של לישה, התפחה ועיצוב.
+                    </p>
+                    <ul class="feature-list">
+                        <li>סדנת פיצה נאפוליטנית</li>
+                        <li>סדנת פסטה טרייה</li>
+                        <li>סדנת בופה איטלקי</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <span>3 שעות | עד <bdi>20</bdi> משתתפים</span>
+                        <a href="#contact">הזמינו עכשיו</a>
+                    </div>
+                </div>
+
+                <div class="workshop-card card reveal">
+                    <h3>
+                        🥩 ארגנטינה
+                        <img src="https://flagcdn.com/w40/ar.png" alt="" aria-hidden="true" class="flag-circle">
+                    </h3>
+                    <p>
+                        למדו להכין בשרים בסגנון ארגנטינאי – מהצלייה על האש ועד לתיבול המושלם. שילוב של טכניקות גריל מסורתיות עם נגיעות מודרניות.
+                    </p>
+                    <ul class="feature-list">
+                        <li>סדנת אסאדו ארגנטינאי</li>
+                        <li>סדנת בשרים מעושנים</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <span>3 שעות | עד <bdi>20</bdi> משתתפים</span>
+                        <a href="#contact">הזמינו עכשיו</a>
+                    </div>
+                </div>
+
+                <div class="workshop-card card reveal">
+                    <h3>
+                        🍣 יפן
+                        <img src="https://flagcdn.com/w40/jp.png" alt="" aria-hidden="true" class="flag-circle">
+                    </h3>
+                    <p>
+                        חוו את סודות המטבח היפני – מהכנת סושי אותנטי ועד מנות חמות מפנקות. שילוב של דיוק, אסתטיקה וטעמים ייחודיים.
+                    </p>
+                    <ul class="feature-list">
+                        <li>סדנת סושי מקצועית</li>
+                        <li>סדנת רמֶן יפני</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <span>3 שעות | עד <bdi>20</bdi> משתתפים</span>
+                        <a href="#contact">הזמינו עכשיו</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="workshops events section-divider">
+            <div class="section-head">
+                <h2>אירועים מיוחדים</h2>
+                <p class="section-sub">חוויה קולינרית מותאמת אישית לכל אירוע — מגיבוש צוות ועד ערב רומנטי.</p>
+            </div>
+            <div class="workshop-grid">
+                <div class="workshop-card card reveal">
+                    <h3>🎉 אירועי חברות וגיבוש</h3>
+                    <p>אירוע מותאם אישית לצוותים וחברות. בישול תחרותי, אתגרי צוות וחוויה בלתי נשכחת.</p>
+                    <ul class="feature-list">
+                        <li>אירועי גיבוש צוותים</li>
+                        <li>תחרויות בישול</li>
+                        <li>אירועי השקה וחגיגות חברה</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <span>מותאם אישית | <bdi>10-50</bdi> משתתפים</span>
+                        <a href="#contact">הזמינו עכשיו</a>
+                    </div>
+                </div>
+
+                <div class="workshop-card card reveal">
+                    <h3>🎂 ימי הולדת וחגיגות</h3>
+                    <p>חגיגת יום הולדת קולינרית מיוחדת. המשתתפים מכינים יחד את האוכל ונהנים מחוויה בלתי נשכחת.</p>
+                    <ul class="feature-list">
+                        <li>מסיבות יום הולדת למבוגרים וילדים</li>
+                        <li>אירועים למשפחות</li>
+                        <li>אירועי בר/בת מצווה</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <span><bdi>2-4</bdi> שעות | <bdi>8-30</bdi> משתתפים</span>
+                        <a href="#contact">הזמינו עכשיו</a>
+                    </div>
+                </div>
+
+                <div class="workshop-card card reveal">
+                    <h3>💑 אירועים רומנטיים</h3>
+                    <p>ערב רומנטי מיוחד לזוגות.</p>
+                    <ul class="feature-list">
+                        <li>ערב רומנטי לקבוצות זוגות</li>
+                        <li>אירועי הצעת נישואין</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <span><bdi>3</bdi> שעות | <bdi>2-10</bdi> משתתפים</span>
+                        <a href="#contact">הזמינו עכשיו</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="contact section-divider">
+            <div class="contact-container glass">
+                <h2>הזמינו אירוע</h2>
+                <p class="contact-subtitle">מלאו את הפרטים ונחזור אליכם בהקדם</p>
+                <p class="required-hint">שדות המסומנים ב-* הם שדות חובה</p>
+
+                <form id="workshopForm" class="form-grid" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">שם מלא *</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">אימייל *</label>
+                            <input type="email" id="email" name="email" autocomplete="email" dir="ltr" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">טלפון *</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" dir="ltr" inputmode="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">תאריך מועדף</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="workshop">סוג סדנה / אירוע *</label>
+                            <select id="workshop" name="workshop" required>
+                                <option value="">בחרו אפשרות...</option>
+                                <option value="event">אירוע</option>
+                                <option value="workshop">סדנה</option>
+                                <option value="private-chef">שף פרטי / ארוחת שף</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="participants">מספר משתתפים *</label>
+                            <input type="number" id="participants" name="participants" min="1" max="50" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dietary">הגבלות תזונתיות / אלרגיות</label>
+                        <textarea id="dietary" name="dietary" placeholder="ציינו אם יש הגבלות תזונתיות, אלרגיות או העדפות מיוחדות..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">הודעה נוספת</label>
+                        <textarea id="message" name="message" placeholder="ספרו לנו על האירוע, מיקום מועדף, או כל בקשה מיוחדת..."></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">
+                            אני מאשר/ת שליחת הפרטים לצורך יצירת קשר בנוגע להזמנת הסדנה
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">שלח הזמנה</button>
+
+                    <div id="formStatus" role="status" aria-live="polite"></div>
+                </form>
+
+                <p class="contact-note">
+                    הפרטים נשלחים ישירות למייל: <a href="mailto:ofekoftaste@gmail.com"><bdi>ofekoftaste@gmail.com</bdi></a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> שף אופק חוזה. כל הזכויות שמורות | עוצב עם 🧡 ותשוקה לאוכל טוב</p>
+    </footer>
+
+    <script>
+        (function () {
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            // Current year
+            var yearEl = document.getElementById('year');
+            if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
+            // Smooth scrolling for in-page anchors
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    var id = this.getAttribute('href');
+                    if (!id || id === '#' || id.length < 2) { return; }
+                    var target = document.querySelector(id);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Mobile menu
+            var btn = document.getElementById('menuBtn');
+            var menu = document.getElementById('mobileMenu');
+            var overlay = document.getElementById('menuOverlay');
+            var background = [
+                document.querySelector('header'),
+                document.getElementById('main'),
+                document.querySelector('footer')
+            ].filter(Boolean);
+
+            function setBackgroundInert(on) {
+                background.forEach(function (el) {
+                    if (on) { el.setAttribute('inert', ''); } else { el.removeAttribute('inert'); }
+                });
+            }
+
+            function openMenu() {
+                menu.classList.add('active');
+                overlay.classList.add('active');
+                btn.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+                btn.setAttribute('aria-label', 'סגור תפריט');
+                menu.removeAttribute('inert');
+                menu.removeAttribute('aria-hidden');
+                setBackgroundInert(true);
+                document.body.style.overflow = 'hidden';
+                var first = menu.querySelector('a');
+                if (first) { first.focus(); }
+            }
+            function closeMenu(restoreFocus) {
+                if (!menu.classList.contains('active')) { return; }
+                menu.classList.remove('active');
+                overlay.classList.remove('active');
+                btn.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.setAttribute('aria-label', 'פתח תפריט');
+                setBackgroundInert(false);
+                menu.setAttribute('inert', '');
+                menu.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                if (restoreFocus) { btn.focus(); }
+            }
+            if (btn && menu && overlay) {
+                btn.addEventListener('click', function () {
+                    if (menu.classList.contains('active')) { closeMenu(true); } else { openMenu(); }
+                });
+                overlay.addEventListener('click', function () { closeMenu(true); });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') { closeMenu(true); }
+                });
+                // Close on link tap (page navigates, so no focus restore needed)
+                menu.querySelectorAll('a').forEach(function (a) {
+                    a.addEventListener('click', function () { closeMenu(false); });
+                });
+                // Focus trap while open
+                menu.addEventListener('keydown', function (e) {
+                    if (e.key !== 'Tab') { return; }
+                    var f = menu.querySelectorAll('a[href]');
+                    if (!f.length) { return; }
+                    var first = f[0], last = f[f.length - 1];
+                    if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault(); last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault(); first.focus();
+                    }
+                });
+            }
+
+            // Nav background on scroll (rAF-throttled, passive)
+            var nav = document.getElementById('mainNav');
+            var ticking = false;
+            function onScroll() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function () {
+                        if (nav) { nav.classList.toggle('scrolled', window.scrollY > 60); }
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            // Scroll reveal
+            var revealEls = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window && !reduceMotion) {
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+                revealEls.forEach(function (el) { observer.observe(el); });
+            } else {
+                revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+            }
+
+            // Contact form -> mailto
+            var form = document.getElementById('workshopForm');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var statusEl = document.getElementById('formStatus');
+
+                    if (!form.checkValidity()) {
+                        form.reportValidity();
+                        return;
+                    }
+                    if (!document.getElementById('consent').checked) {
+                        statusEl.textContent = 'יש לאשר את שליחת הפרטים';
+                        statusEl.style.color = '#ef4444';
+                        return;
+                    }
+
+                    statusEl.textContent = 'שולח...';
+                    statusEl.style.color = 'rgba(255,255,255,0.7)';
+
+                    var workshopSel = document.getElementById('workshop');
+                    var data = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        phone: document.getElementById('phone').value,
+                        date: document.getElementById('date').value || 'לא צוין',
+                        workshop: workshopSel.options[workshopSel.selectedIndex].text,
+                        participants: document.getElementById('participants').value,
+                        dietary: document.getElementById('dietary').value || 'אין',
+                        message: document.getElementById('message').value || 'אין'
+                    };
+
+                    var subject = 'הזמנה מהאתר: ' + data.workshop;
+                    var body = [
+                        'פרטי הזמנה חדשה:', '',
+                        'שם: ' + data.name,
+                        'אימייל: ' + data.email,
+                        'טלפון: ' + data.phone,
+                        'סוג: ' + data.workshop,
+                        'תאריך מועדף: ' + data.date,
+                        'מספר משתתפים: ' + data.participants,
+                        'הגבלות תזונתיות: ' + data.dietary,
+                        'הודעה נוספת: ' + data.message, '',
+                        'נשלח מטופס האתר'
+                    ].join('\n');
+
+                    window.location.href = 'mailto:ofekoftaste@gmail.com?subject=' +
+                        encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+                    statusEl.textContent = '✓ הבקשה נשלחה בהצלחה! המייל ייפתח עכשיו לשליחה';
+                    statusEl.style.color = '#22c55e';
+
+                    setTimeout(function () {
+                        form.reset();
+                        statusEl.textContent = '';
+                    }, 5000);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
